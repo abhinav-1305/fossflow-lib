@@ -10,7 +10,6 @@ interface Props {
 export const Searchbox = ({ value, onChange }: Props) => {
   return (
     <TextField
-      fullWidth
       placeholder="Search icons"
       value={value}
       onChange={(e) => {

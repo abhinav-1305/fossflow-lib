@@ -122,11 +122,47 @@ export const themeConfig: ThemeOptions = {
     },
     MuiTextField: {
       defaultProps: {
-        variant: 'outlined'
+        variant: 'outlined',
+        size: 'small'
       },
       styleOverrides: {
         root: {
-          '.MuiInputBase-input': {}
+          maxWidth: '300px',
+          width: '100%',
+          '.MuiInputBase-input': {
+            fontSize: '0.875rem'
+          }
+        }
+      }
+    },
+    MuiSelect: {
+      defaultProps: {
+        size: 'small'
+      },
+      styleOverrides: {
+        root: {
+          maxWidth: '300px',
+          width: '100%',
+          fontSize: '0.875rem'
+        }
+      }
+    },
+    MuiFormControl: {
+      defaultProps: {
+        size: 'small'
+      },
+      styleOverrides: {
+        root: {
+          maxWidth: '300px',
+          width: '100%'
+        }
+      }
+    },
+    MuiSlider: {
+      styleOverrides: {
+        root: {
+          maxWidth: '300px',
+          width: '100%'
         }
       }
     }
